@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Nút ấn</button>
+    <input type="text" id="number1">
+    <input type="text" id="number2">
+    <input type="text" id="Sum">
+    <script>
+        let button = document.getElementById("btn");
+        button.addEventListener("click", calculateSum);
+        function calculateSum() {
+            let number1 = document.getElementById("number1");
+            let number2 = document.getElementById("number2");
+            let sum = document.getElementById("Sum");
+            let value1 = +number1.value;
+            let value2 = +number2.value;
+            sum.value = value1 + value2;
+        }
+    </script>
+    </script>
+</body>
+
+</html>

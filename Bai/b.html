@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Todo List</title>
+    <style>
+        .yellow-bg {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Create New Item</h1>
+    <label for="item">Item</label>
+    <input type="text" name="item" id="item">
+    <button id="btn">add</button><br><br>
+    <ul id="itemList">
+        <li>nho mỹ</li>
+        <li>táo tàu</li>
+        <li>lâm Wibu</li>
+    </ul>
+    
+    <script>
+        const Button = document.getElementById('btn');
+        const itemInput = document.getElementById('item');
+        const itemList = document.getElementById('itemList');
+        Button.addEventListener('click', function () {
+            let newItemText = itemInput.value;
+            if (newItemText !== '') {
+                const newItem = document.createElement('li');
+                newItem.textContent = newItemText;
+                itemList.appendChild(newItem);
+                itemInput.value = '';
+            } else {
+                itemInput.style.backgroundColor = 'yellow';
+            }
+        });
+        itemInput.addEventListener('input', function () {
+            if (itemInput.value !== '') {
+                itemInput.style.backgroundColor = ''; 
+            }
+        });
+    </script>
+</body>
+
+</html>

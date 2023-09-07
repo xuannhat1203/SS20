@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myDiv" style="width: 100px; height: 100px; background-color: red;" onclick="suKien()"></div>
+    <script>
+        let myDiv = document.getElementById("myDiv");
+        function suKien1() {
+            console.log("Sự kiện 1 xảy ra ");
+        }
+        function suKien2() {
+            console.log("Sự kiện 2 xảy ra ");
+        }
+        myDiv.addEventListener("click", suKien1);
+        myDiv.addEventListener("click", suKien2);
+        /* Cách 3 nếu sử dụng add nhiều event giống nhau  */
+    </script>
+</body>
+
+</html>

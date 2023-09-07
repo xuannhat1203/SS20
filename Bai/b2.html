@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Nhập nội dung tìm kiếm</span>
+    <input id="input" type="text" style="width: 200px; height: 20px;">
+    <span id="a"></span>
+    <div id="option"></div>
+    <br>
+    <span id="search"></span>
+    <script>
+        let myA = document.getElementById("a")
+        myA.innerHTML = `<a id="link" href="https://www.youtube.com/">Tìm kiếm nâng cao</a>`;
+        let mySearch = document.getElementById("search")
+        mySearch.innerHTML = `<button>Tìm kiếm</button>`
+        let myId = document.getElementById("input")
+        myId.setAttribute("placeholder", "Ngu")
+        let myOption = document.getElementById("option")
+        myOption.innerHTML = `<select name="gender" id="gender">
+            <option value="Quần áo">Quần áo</option>
+            <option value="Giày dép">Giày dép</option>
+            </select>`
+        mySearch.addEventListener("click", function () {
+            link.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        document.getElementById(id): Tìm một phần tử theo id phần tử
+        document.getElementsByTagName(name):Tìm phần tử theo tên thẻ
+        document.getElementsByClassName(name):Tìm phần tử theo tên lớp
+      -->
+    <div id="myDiv" style="font-size: 100px;">
+        <h1>456</h1>
+        123
+        34reads
+        cdsavsa
+    </div>;
+    <div id="myDiv1" , class="myDiv" , style="font-size: 100px;">
+        <h4>123</h4>
+        456
+    </div>
+    123
+    <div class="font-size:100px">222</div>
+    <div id="myDiv3" , class="myDiv" , style="font-size: 100px;">abcd</div>
+    <script>
+        // truy cập phần tử html theo id
+        let myDivById = document.getElementById("myDiv1");
+        // lấy ra tập hợp các phần tử html theo tên thẻ
+        // các phần tử được lưu trong HTML collection
+        let divCollection = document.getElementsByTagName("div");
+        //truy cập các phần tử html theo class
+        // các phần tử được lưu trong html collection
+        let myDivByClass = document.getElementsByClassName("myDiv");
+        //truy câp phần tử theo bộ chọn(css selector)
+        //chỉ lấy được 1 phần tử
+        let myDivBySeclector = document.querySelector("#myDiv");
+        //truy cập tập hợp phần tử theo bộ chọn
+        //các phần tử được lưu trong Nodelist
+        let listBySelector = document.querySelectorAll(".myDiv");
+        //thay đổi thuộc tính của các phần tử
+        let newDiv = document.createElement("div");
+        newDiv.innerText = "div mới";
+        newDiv.id = "newDiv";
+        console.log(newDiv);
+        // thêm thẻ mới vào cuối cùng của thằng cha
+        myDivById.appenChild("myDiv");
+        // xóa các phần tử html trong phần tử khác
+        myDivById.removeChild(h4)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="form"></div>
+    <script>
+        let doc=document.getElementById("form");// truy cập vào thẻ div
+        let input1 = document.createElement('input');//tạo thẻ input
+        let input2 = document.createElement('input');// tạo thẻ input
+        input1.value= "Nguyễn Xuân Nhất"//gắn giá trị cho thẻ input1 là nguyễn xuân nhất
+        input2.value = "22122005";// gắn giá trị cho thẻ input 2 là 22122005
+        doc.appendChild(input1);// cho giá trị của thẻ input1 vào trong doc
+        doc.appendChild(input2);// cho giá trị của thẻ input2 vào trong doc
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hiển thị nội dung nhập vào</title>
+</head>
+
+<body>
+    <!-- Cách 1 -->
+    <!--  <input type="text" id="input" oninput="displayText()" />
+    <div id="output"></div> -->
+    <!-- Cách 2 -->
+     <input type="text" id="input" onchange="displayText()" />
+    <div id="output"></div> 
+    <!-- Cách 3 -->
+  <!--   <input type="text" id="input">
+    <div id="myDiv"></div> -->
+    <script>
+         function displayText() {
+             let input = document.getElementById("input").value;
+             document.getElementById("output").innerText = input;
+         } 
+    /* let type = document.getElementById("input")
+    let div=document.getElementById("myDiv");
+    type.addEventListener("input", function(){
+        myDiv.innerText=type.value;
+    } ) */
+
+    </script>
+
+</body>
+
+</html>

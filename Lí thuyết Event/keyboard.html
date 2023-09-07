@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="myInput">
+    <script>
+        let myInput = document.getElementById("myInput");
+        myInput.addEventListener("keypress", (e) => {
+            console.log("nhấn phím", e.keyCode);
+            if (e.keyCode == 97) {
+                console.log("đây là phím a");
+            }
+        })
+        myInput.addEventListener("keyup", (e) => {
+            console.log("nhấn phím", e.keyCode);
+        })
+        myInput.addEventListener("keydown", (e) => {
+            console.log("Nhấn phím", e.keyCode);
+        })
+    </script>
+</body>
+
+</html>

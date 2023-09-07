@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input1 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Create New Item</h1>
+
+    Item <input id="input1" type="text">
+    <button id="btn1">Add</button>
+    <ul id="ul1">
+        <li>Nho mỹ</li>
+        <li>Táo tàu</li>
+    </ul>
+    <script>
+        let input1 = document.getElementById("input1");
+        let btn1 = document.getElementById("btn1");
+        let ul1 = document.getElementById("ul1");
+
+        btn1.addEventListener("click", function () {
+            let newInput = input1.value;
+            if (newInput!== "") {
+                let newUl = document.createElement("li");
+                newUl.textContent = newInput;
+                ul1.appendChild(newUl);
+                input1.value = "";
+                input1.style.backgroundColor = "yellow"
+            } else {
+                input1.style.backgroundColor = "white"
+            }
+
+        });
+        input1.addEventListener("input", function () {
+            let newInput = input1.value;
+            if (newInput !== "") {
+                input1.style.backgroundColor = "white";
+            } else {
+                input1.style.backgroundColor = "yellow";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

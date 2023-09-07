@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="form"></div>
+    <script>
+        let formm = document.getElementById("form");
+        formm.innerHTML =`<input id="username" type="text" value="Username">
+                <input id="password" type="text" value="Password">`;
+        let user = document.getElementById("username");       
+        user.setAttribute("placeholder","Rikkei Acadamy");
+        let text = document.getElementById("password");
+        text.setAttribute("placeholder", "RA-T8");
+        text.setAttribute("value", "de nong dan biet code")
+    </script>
+</body>
+
+</html>

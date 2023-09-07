@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="baitap1">
+        <span>Nhập nội dung tìm kiếm</span>
+        <input style="width: 200px; height: 20px;" type="text" value="">
+        <a id="a" href="https://www.google.com.vn/webhp?tab=ww&authuser=0">Ấn tìm kiếm nâng cao</a>
+        <br>
+        <div id="select"></div>
+        <br>
+        <div id="button"></div>
+        <script>
+            let myGender=document.getElementById("select");
+            let button=document.getElementById("button")
+            button.innerHTML =`<button>Bấm đi nè</button>`
+            myGender.innerHTML =`<select name="gender" id="gender">
+            <option value="Quần áo">Quần áo</option>
+            <option value="Giày dép">Giày dép</option>
+            </select>`
+            myGender.addEventListener("change", (e) =>{
+                console.log(e.target.value);
+            })
+            button.addEventListener("click", function() {
+                a.style.display="none";
+            })
+        </script>
+    </div>
+</body>
+</html>

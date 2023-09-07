@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="myInput">
+    <select name="gender" id="gender">
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+    </select>
+    <script>
+        let myInput = document.getElementById("myInput");
+        let mySelect = document.getElementById("gender");
+        // sự kiện khi giá trị phần tử thay đổi
+        mySelect.addEventListener("change", (e) =>{
+            console.log(e.target.value);
+        })
+        // sự kiện khi nhập giá trị cho phần tử 
+        myInput.addEventListener("input", (e)=>{
+            console.log(e.target.value);
+        })
+        // sự kiện khi cuộn thanh lăn
+        document.addEventListener("scroll", (e)=>{
+            console.log(window.pageXOffset);
+        })
+        // sự kiện thay đổi kích thước cửa sổ
+        window.addEventListener("resize", (e) => {
+            console.log("thay đổi kích thước của cửa sổ");
+        })
+        // sự kiện khi phần tử load xong
+        myInput.addEventListener("load", ()=>{
+            console.log("đã load xong");
+        })
+    </script>
+    
+</body>
+</html>

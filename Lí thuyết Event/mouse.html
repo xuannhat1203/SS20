@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myDiv1" style="width: 100px; height: 100px; background-color: aquamarine;"></div>
+    <br>
+    <div id="myDiv2" style="width: 100px; height: 100px; background-color: aquamarine;"></div>
+    
+    <script>
+        let myDiv1 = document.getElementById("myDiv1");
+        let myDiv2 = document.getElementById("myDiv2");
+
+        myDiv1.addEventListener("mousedown", () => {
+            console.log("nhấn chuột xuống");
+        });
+
+        myDiv1.addEventListener("mouseup", () => {
+            console.log("nhấn chuột lên");
+        });
+
+        myDiv1.addEventListener("mouseover", () => {
+            console.log("chuột di chuyển nằm trên phần tử");
+            myDiv2.style.background = "red";
+        });
+
+        myDiv1.addEventListener("mouseout", () => {
+            console.log("chuột di chuyển ra ngoài phần tử");
+            myDiv2.style.background = "blue";
+        });
+
+        myDiv1.addEventListener("mousemove", () => {
+            console.log(Math.random());
+        });
+    </script>
+        
+
+    </script>
+</body>
+
+</html>
